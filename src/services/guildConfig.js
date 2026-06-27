@@ -21,7 +21,20 @@ const GUILD_CONFIG_DEFAULTS = {
         ignore: { users: [], channels: [] },
         enabledEvents: {},
     },
+
+    verification: {
+        enabled: false,
+        channelId: null,
+        messageId: null,
+        roleId: null,
+        message: null,
+        buttonText: null,
+        autoVerify: {
+            enabled: false
+        }
+    }
 };
+
 
 export const getGuildConfig = wrapServiceBoundary(async function getGuildConfig(client, guildId, context = {}) {
     const config = await getGuildConfigDb(client, guildId, context);
