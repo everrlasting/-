@@ -183,7 +183,7 @@ async function handleSetup(interaction, guild, client) {
 
     const verifyEmbed = createEmbed({
         title: ". ˖  ꒰𑁬 rules ໒꒱  ˖ .",
-        description: message,
+        description: message.replaceAll("|", "\n"),
         color: getColor('success')
     });
 
