@@ -185,7 +185,7 @@ async function handleSetup(interaction, guild, client) {
         title: ". ˖  ꒰𑁬 rules ໒꒱  ˖ .",
         description: message.replaceAll("|", "\n"),
         color: getColor('success')
-        verifyEmbed.setImage("https://i.postimg.cc/sD2K3GTL/download-(15).webp");
+
     });
 
     const verifyButton = new ActionRowBuilder().addComponents(
